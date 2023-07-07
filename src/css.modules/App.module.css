@@ -1,0 +1,56 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 100px;
+  color: #30a2ff;
+}
+
+.login_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login_box button:first-child {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.login_box button:last-child {
+  background-color: #3b5998;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.login_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #30a2ff;
+}
+
+.barist_img {
+  width: 635px;
+  height: 741px;
+  position: fixed;
+  bottom: 0px;
+  right: 400px;
+}
