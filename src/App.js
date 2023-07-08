@@ -5,6 +5,12 @@ import { auth } from "./fbase";
 import Auth from "./pages/Auth";
 import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
+import Detail from "./pages/Deatil";
+import {
+  neighborhoodCafes,
+  popularCafes,
+  quietCafes,
+} from "./components/Cafes";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -33,6 +39,16 @@ function App() {
           ) : (
             <Route path="/" element={<Auth />} />
           )}
+          <Route
+            path="/detail/:id"
+            element={
+              <Detail
+                neighborhoodCafes={neighborhoodCafes}
+                popularCafes={popularCafes}
+                quietCafes={quietCafes}
+              />
+            }
+          ></Route>
         </Routes>
       </Router>
     </div>

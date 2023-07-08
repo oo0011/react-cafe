@@ -51,9 +51,6 @@ const popularCafes = [
     keyword1: "아늑한",
     keyword2: "맛있는",
   },
-];
-
-const quietCafes = [
   {
     id: 6,
     name: "Cafe A",
@@ -62,8 +59,19 @@ const quietCafes = [
     keyword1: "아늑한",
     keyword2: "맛있는",
   },
+];
+
+const quietCafes = [
   {
     id: 7,
+    name: "Cafe A",
+    address: "서울시 마포구 와우산로..",
+    url: quietCafe1,
+    keyword1: "아늑한",
+    keyword2: "맛있는",
+  },
+  {
+    id: 8,
     name: "Cafe B",
     address: "서울시 마포구 와우산로..",
     url: quietCafe2,
@@ -71,7 +79,7 @@ const quietCafes = [
     keyword2: "맛있는",
   },
   {
-    id: 8,
+    id: 9,
     name: "Cafe C",
     address: "서울시 마포구 와우산로..",
     url: quietCafe3,

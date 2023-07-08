@@ -1,0 +1,77 @@
+.detail_box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail_header {
+  width: 856px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+
+.detail_header a {
+  text-decoration: none;
+  color: black;
+}
+
+.detail_header span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.detail_img img {
+  width: 566px;
+  height: 350px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.cafe_info_box {
+  width: 566px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cafe_info p {
+  font-size: 15px;
+  color: #8f8f90;
+}
+
+.cafe_info_box button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #30a2ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.price_box {
+  margin-bottom: 150px;
+  width: 566px;
+  text-align: center;
+}
+
+.price_box span {
+  margin: 30px;
+  font-size: 15px;
+  color: #8f8f90;
+}
+
+.menu_box {
+  margin-top: 50px;
+  width: 566px;
+}
+
+.menu_box h2 {
+  margin-bottom: 20px;
+}

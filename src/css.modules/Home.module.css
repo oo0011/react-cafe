@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .search_box h1 {
@@ -30,15 +31,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+}
+
+.title_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title_box h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 80px;
+}
+
+.title_box p {
+  font-size: 15px;
+  margin-right: 80px;
+  color: rgb(101, 98, 98);
 }
 
 .cafes_box {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .cafes_list {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
 }
@@ -47,45 +73,54 @@
   margin: 0 10px;
 }
 
+.cafe_item a {
+  text-decoration: none;
+  color: black;
+}
+
 .detail_box {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 420px;
-  height: 180px;
+  height: 380px;
   margin-right: 50px;
   margin-left: 50px;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: #eeeeee;
+  border: 2px solid #eeeeee;
 }
 
 .detail_box img {
-  width: 200px;
-  height: 150px;
-  margin-left: 20px;
-  border-radius: 20px;
+  width: 420px;
+  height: 250px;
 }
 
 .info_title {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: -0px;
+  margin-bottom: 10px;
 }
 
 .image_box {
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .info_box {
   display: flex;
   flex-direction: column;
+  margin-right: 200px;
+  margin-bottom: 23px;
 }
 
 .keywords {
   display: flex;
-  margin-top: -15px;
 }
 
 .keywords span {
   margin-right: 10px;
+}
+
+.home_footer {
+  width: 100%;
+  height: 300px;
 }
