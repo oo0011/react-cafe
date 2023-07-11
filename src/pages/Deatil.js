@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import styles from "../css.modules/Detail.module.css";
-
+import SeatModal from "../components/SeatModal";
 const Detail = ({ neighborhoodCafes, popularCafes, quietCafes }) => {
   const { id } = useParams();
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  // 모달창 노출
+  const showModal = () => {
+    setModalOpen(true);
+  };
 
   const cafe = neighborhoodCafes.find((cafe) => cafe.id === parseInt(id));
   const cafeType = cafe
@@ -48,7 +55,8 @@ const Detail = ({ neighborhoodCafes, popularCafes, quietCafes }) => {
           <p>010 - 1234 - 5678</p>
         </div>
         <div>
-          <button>좌석 현황</button>
+          <button onClick={showModal}>좌석 현황</button>
+          {modalOpen && <SeatModal setModalOpen={setModalOpen} />}
         </div>
       </div>
 
