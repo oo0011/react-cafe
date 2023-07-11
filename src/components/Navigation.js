@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import styles from "../css.modules/Navigation.module.css";
 
 const Navigation = ({ user }) => {
   return (

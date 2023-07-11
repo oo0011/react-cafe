@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../images/Logo.png";
-import barista from "../images/undraw_barista_at0v 1.png";
 import facebook from "../images/facebook_logo.png";
 import google from "../images/google_logo.png";
 import styles from "../css.modules/App.module.css";
+
 import {
   FacebookAuthProvider,
   GoogleAuthProvider,
@@ -43,8 +43,6 @@ function Auth() {
           <img src={facebook} alt="facebook" />
         </button>
       </div>
-
-      <img className={styles.barist_img} src={barista} alt="barista" />
     </div>
   );
 }
