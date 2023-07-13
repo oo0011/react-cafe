@@ -6,6 +6,7 @@ import {
 } from "../components/Cafes";
 import styles from "../css.modules/Home.module.css";
 import { Link } from "react-router-dom";
+import CafeItem from "../components/CafeItem";
 
 const Home = () => {
   return (
@@ -31,23 +32,7 @@ const Home = () => {
         <div className={styles.cafes_box}>
           <ul className={styles.cafes_list}>
             {neighborhoodCafes.map((cafe) => (
-              <li key={cafe.id} className={styles.cafe_item}>
-                <Link to={`/detail/${cafe.id}`}>
-                  <div className={styles.detail_box}>
-                    <div className={styles.image_box}>
-                      <img src={cafe.url} alt="cafe_img" />
-                    </div>
-                    <div className={styles.info_box}>
-                      <p className={styles.info_title}>{cafe.name}</p>
-                      <p>{cafe.address}</p>
-                      <div className={styles.keywords}>
-                        <span>{cafe.keyword1}</span>
-                        <span>{cafe.keyword2}</span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </li>
+              <CafeItem key={cafe.id} cafe={cafe} />
             ))}
           </ul>
         </div>
@@ -61,23 +46,7 @@ const Home = () => {
         <div className={styles.cafes_box}>
           <ul className={styles.cafes_list}>
             {popularCafes.map((cafe2) => (
-              <li key={cafe2.id} className={styles.cafe_item}>
-                <Link to={`/detail/${cafe2.id}`}>
-                  <div className={styles.detail_box}>
-                    <div className={styles.image_box}>
-                      <img src={cafe2.url} alt="cafe_img" />
-                    </div>
-                    <div className={styles.info_box}>
-                      <p className={styles.info_title}>{cafe2.name}</p>
-                      <p>{cafe2.address}</p>
-                      <div className={styles.keywords}>
-                        <span>{cafe2.keyword1}</span>
-                        <span>{cafe2.keyword2}</span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </li>
+              <CafeItem key={cafe2.id} cafe={cafe2} />
             ))}
           </ul>
         </div>
@@ -91,23 +60,7 @@ const Home = () => {
         <div className={styles.cafes_box}>
           <ul className={styles.cafes_list}>
             {quietCafes.map((cafe3) => (
-              <li key={cafe3.id} className={styles.cafe_item}>
-                <Link to={`/detail/${cafe3.id}`}>
-                  <div className={styles.detail_box}>
-                    <div className={styles.image_box}>
-                      <img src={cafe3.url} alt="cafe_img" />
-                    </div>
-                    <div className={styles.info_box}>
-                      <p className={styles.info_title}>{cafe3.name}</p>
-                      <p>{cafe3.address}</p>
-                      <div className={styles.keywords}>
-                        <span>{cafe3.keyword1}</span>
-                        <span>{cafe3.keyword2}</span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </li>
+              <CafeItem key={cafe3.id} cafe={cafe3} />
             ))}
           </ul>
         </div>
